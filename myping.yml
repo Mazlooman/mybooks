@@ -1,0 +1,8 @@
+---
+- name: Check connectivity to all hosts
+  hosts: all
+  gather_facts: no
+# this is test by giti
+  tasks:
+    - name: Ping hosts
+      ping:
